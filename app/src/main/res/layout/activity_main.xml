@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.muhammadpen.audiobuttons.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/greetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="Greetings!"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/goodbye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="Goodbye!"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/howAreYou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="How Are You?"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/iAmFine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_row="1"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="I am fine."
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/whereAreYouGoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_row="3"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="Where are you going?"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/iAmGoingToWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="I am going &#10; to work."
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/iLoveTransparency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:gravity="fill"
+                android:onClick="buttonPressed"
+                android:text="I love &#10; transparence."
+                android:textAlignment="center" />
+
+
+        </GridLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
